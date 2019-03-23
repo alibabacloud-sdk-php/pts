@@ -2,7 +2,18 @@
 
 namespace AlibabaCloud\PTS\V20181111;
 
+use AlibabaCloud\ApiResolverTrait;
 use AlibabaCloud\Rpc;
+
+/**
+ * Resolve Api based on the method name.
+ *
+ * @method GetReport getReport(array $options = [])
+ */
+class PTSApiResolver
+{
+    use ApiResolverTrait;
+}
 
 class V20181111Rpc extends Rpc
 {
